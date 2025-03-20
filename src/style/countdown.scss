@@ -1,0 +1,130 @@
+@use "variables" as *;
+@use "sass:color";
+
+// src/CountdownTimer.module.scss
+.countdown-container {
+  text-align: center;
+  padding: 1rem;
+  width: fit-content;
+  margin: 1rem auto;
+  //background-color: #f9f9f9;
+  border-radius: 100px;
+  //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  flex-wrap: wrap;
+
+
+
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .thebigday {
+    background-color: $primary-dark-green;
+    height: 10rem;
+    max-width: 300px;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    color: white;
+    margin: auto;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    h3 {
+      font-family: "GreatVibes", serif;
+      font-size: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    flex-wrap: wrap;
+    margin: auto;
+
+    .count-container {
+      background: $primary-dark-green;
+      width: 7rem;
+      height: 10rem;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .leaves1,
+      .leaves3,
+      .leaves5 {
+        top: -20px;
+        left: -30px;
+        transform: rotate(-90deg);
+      }
+
+      .leaves2,
+      .leaves4 {
+        bottom: -10px;
+        left: -40px;
+        transform: rotate(10deg);
+      }
+
+      div {
+        width: 80%;
+        height: 85%;
+        border-radius: 50px;
+        margin: auto;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 3rem;
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+          color: white;
+          font-family: "Perfecto", sans-serif;
+        }
+
+        small {
+          display: block;
+          font-size: 1rem;
+          color: color.adjust($text-color, $lightness: -10%);
+        }
+      }
+    }
+
+    .days {}
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .countdown-container {
+    .countdown {}
+  }
+}

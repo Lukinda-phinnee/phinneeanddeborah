@@ -1,0 +1,71 @@
+@use "variables" as *;
+@use "sass:color";
+
+.footer-container {
+
+    gap: 1rem;
+    padding: 1rem;
+
+    .scriptures {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        background-image: url("../assets/rings.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 2px solid $primary-dark-green;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        border-radius: 200px;
+        height: max-content;
+
+        p {
+            font-size: 1.1em;
+        }
+
+        p,
+        h3 {
+            background: rgba(0, 0, 0, 0.368);
+            backdrop-filter: blur(5px);
+            color: white;
+            padding: .5rem;
+        }
+
+    }
+}
+
+footer {
+    height: 20rem;
+    //background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/main-image.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    .text {
+        width: 80%;
+        height: 80%;
+        background-color: #126d4f90;
+        border: 2px solid white;
+        color: white;
+
+        h1 {
+            text-transform: capitalize;
+        }
+    }
+}

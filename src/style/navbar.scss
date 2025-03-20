@@ -1,0 +1,109 @@
+@use "variables" as *;
+@use "sass:color";
+
+// src/components/Navbar.scss
+
+.navbar {
+  background-color: $primary-dark-green;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e74c3c;
+      display: flex;
+      gap: .5rem;
+      //flex-wrap: wrap;
+
+      h3 {
+        font-family: "Perfecto";
+        font-size: 2.5rem;
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        width: 2rem;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      //background: red;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1rem;
+
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 1rem;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $secondary-light-green;
+          }
+        }
+      }
+    }
+  }
+
+  // Responsive Design
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block !important;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: $primary-dark-green;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+      &.open {
+        display: flex;
+      }
+
+      li {
+        margin: 0.5rem 0;
+
+        a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

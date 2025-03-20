@@ -1,0 +1,138 @@
+@use "variables" as *;
+@use "sass:color";
+
+.gallery-header {
+    margin-top: 3rem;
+
+    h2 {
+        font-family: "geraldine", sans-serif;
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+        color: $primary-dark-green;
+        line-height: 1;
+    }
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.gallery {
+    width: fit-content;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .contents {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        //background-color: red;
+
+        .gallery-item {
+            width: 100%;
+            max-width: 300px;
+            //margin: auto;
+            overflow: hidden;
+            border-radius: 200px;
+            position: relative;
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                    transition: all .5s;
+                }
+            }
+
+
+            img {
+                width: inherit;
+                height: inherit;
+                border-radius: 200px;
+            }
+        }
+
+        .item1 {
+            .flowers {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                z-index: 10;
+                top: -50px;
+            }
+        }
+    }
+
+    .contents1,
+    .contents3 {
+        display: grid;
+        //grid-template-rows: 1rf;
+        grid-template-rows: 300px 500px;
+        gap: 1rem;
+
+        .item1 {
+            height: 300px;
+            object-fit: cover;
+
+            img {
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+        .item2 {
+            height: 500px;
+            object-fit: cover;
+
+            img {
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .contents2,
+    .contents4 {
+        display: grid;
+        //grid-template-rows: 1rf;
+        grid-template-rows: 500px 300px;
+        gap: 1rem;
+
+        .item1 {
+            height: 500px;
+            object-fit: cover;
+
+            img {
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+        .item2 {
+            height: 300px;
+            object-fit: cover;
+
+            img {
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

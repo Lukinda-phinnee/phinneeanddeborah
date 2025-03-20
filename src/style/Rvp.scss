@@ -1,0 +1,183 @@
+@use "variables" as *;
+@use "sass:color";
+
+.rpv-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-dark-green;
+    color: white;
+    padding: 1rem 0;
+
+
+    .contents {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid white;
+        max-width: 400px;
+        height: 800px;
+        border-radius: 300px;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: visible;
+
+        .flowers {
+            img {
+                width: 300px;
+                max-width: 400px;
+                transform: rotate(180deg);
+            }
+
+            H2 {
+                font-family: "Geraldine";
+                font-size: 4rem;
+                margin: 0;
+                padding: 0;
+                text-transform: capitalize;
+            }
+        }
+
+        .lignes {
+            display: flex;
+            flex-direction: row;
+            //background-color: red;
+            flex-wrap: nowrap;
+            gap: .5rem;
+            width: 100%;
+
+            hr {
+                height: 1px;
+                width: 50%;
+                background-color: white;
+            }
+
+            .circle {
+                width: 20px;
+                aspect-ratio: 1 / 1;
+                //height: 20px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            //background-color: red;
+            width: 100%;
+            margin: 1rem 0;
+            position: relative;
+            //border: 1px solid red;
+            //padding-bottom: 4rem;
+
+            input,
+            select {
+                padding: 1rem 0;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.54);
+                color: white;
+
+                * {
+                    color: black;
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: white;
+                }
+            }
+
+            button {
+                background-color: white;
+                color: black;
+                border: none;
+                outline: none;
+                margin: 1rem 0;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: color.adjust($primary-dark-green, $lightness: 20%);
+                    color: white;
+                    transition: all .5s;
+                }
+            }
+
+            .flowers2 {
+                img {
+                    width: 300px;
+                    max-width: 400px;
+
+                }
+            }
+        }
+
+        .bouquet1 {
+            width: 150px;
+            //height: 150px;
+
+            position: absolute;
+            top: 0;
+            left: -50px;
+            z-index: 1;
+        }
+
+        .bouquet2 {
+            width: 150px;
+            //height: 150px;
+
+            position: absolute;
+            top: 0;
+            right: -50px;
+            z-index: 1;
+        }
+
+        .bouquet3 {
+            width: 150px;
+            //height: 150px;
+
+            position: absolute;
+            bottom: 0;
+            left: -50px;
+            z-index: 1;
+        }
+
+        .bouquet4 {
+            width: 150px;
+            //height: 150px;
+
+            position: absolute;
+            bottom: 0;
+            right: -50px;
+            z-index: 1;
+        }
+
+        .bouquet5 {
+            width: 150px;
+            //height: 150px;
+
+            position: absolute;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .couple {
+            position: absolute;
+            left: -28rem;
+        }
+
+        .couple2 {
+            position: absolute;
+            right: -18rem;
+            top: -5rem;
+        }
+    }
+}

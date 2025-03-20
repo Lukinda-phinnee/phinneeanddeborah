@@ -1,0 +1,36 @@
+
+
+$primary-dark-green: #126d4e; /* Deep, rich dark green */
+$secondary-light-green: #63a957; /* Soft light green for accents */
+$tertiary-white: #ffffff; /* Pure white for contrast */
+$quaternary-cream: #f9f3e8; /* Warm cream color for backgrounds */
+$text-color: #ececec;
+
+$primary-dark-green-op: rgba(18, 109, 78, 0.51); /* Deep, rich dark green */
+
+
+//Fonts
+
+@font-face {
+  font-family: 'Perfecto';
+  src: url('../fonts/PerfectoCalligraphy.ttf') format('woff2'),
+  url('../fonts/PerfectoCalligraphy.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geraldine';
+  src: url('../fonts/geraldine.ttf') format('woff2'),
+  url('../fonts/geraldine.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GreatVibes';
+  src: url('../fonts/GreatVibes-Regular.ttf') format('woff2'),
+  url('../fonts/GreatVibes-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

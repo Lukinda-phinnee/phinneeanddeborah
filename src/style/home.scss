@@ -1,0 +1,209 @@
+@use "variables" as *;
+@use "sass:color";
+
+.home {
+  font-family: Arial, sans-serif;
+  //width: fit-content;
+  width: fit-content;
+  flex-wrap: nowrap;
+  margin: auto;
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+
+
+  .main-img {
+    background: url("../assets/main-image.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    min-width: 300px;
+    max-width: 34rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    //border: 2rem solid lightgray;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: end;
+    //align-items: center; /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+
+    .front-circle {
+      //background: red;
+      width: 100%;
+      min-width: 250px;
+      max-width: 30rem;
+      /* Make it the same size as the parent */
+      aspect-ratio: 1/1;
+      /* Ensure it's a perfect circle */
+      position: absolute;
+      z-index: 1;
+      border-radius: 50%;
+      border: 2rem solid lightgray;
+      top: 0;
+      /* Align with the top of the parent */
+      left: 0;
+      /* Align with the left of the parent */
+      transform: translate(-50, 0);
+    }
+
+
+
+    .wedding-date {
+      background: $primary-dark-green-op;
+      padding: .5rem 1rem;
+      backdrop-filter: blur(5px);
+      //opacity: .5;
+      width: 80%;
+      border-top: 2px solid $primary-dark-green;
+      border-bottom: 2px solid $primary-dark-green;
+      margin: 0 auto 3rem auto;
+      //z-index: -1;
+      border-radius: 0 0 15rem 15rem;
+      color: white;
+    }
+  }
+
+
+
+
+  .section {
+    margin: auto;
+    //width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 200px;
+    background: $primary-dark-green;
+    display: grid;
+    place-items: center;
+    color: white;
+    margin: auto;
+    //place-content: center;
+    //position: relative;
+
+    .inner-section {
+      width: 90%;
+      height: 93%;
+      border-radius: 150px;
+      margin: auto;
+      //aspect-ratio: 1/1;
+      border: 2px solid white;
+      //background: red;
+      position: relative;
+
+      .singleflower1 {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        //top: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .singleflower2 {
+        width: 100px;
+        height: 150px;
+        position: absolute;
+        //top: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      .singleflower3 {
+        width: 70px;
+        height: 75px;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        bottom: 0;
+      }
+
+      .singleflower4 {
+        width: 70px;
+        height: 75px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        bottom: 0;
+      }
+
+      .singleflower5 {
+        width: 70px;
+        height: 75px;
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        bottom: 0;
+      }
+
+      .singleflower6 {
+        width: 70px;
+        height: 75px;
+        position: absolute;
+        top: 55%;
+        right: -20px;
+        bottom: 0;
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-family: "Geraldine";
+      line-height: 1;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 5px 0;
+    }
+  }
+
+  .wedding-date {
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin: 5px 0;
+    }
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .home {
+    flex-direction: column;
+    gap: 1rem;
+
+    .section {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home {
+    .main-img {
+      width: 100%;
+      margin: auto;
+
+      .front-circle {
+        //background-color: green;
+        width: 84%;
+
+        //border: none;
+      }
+    }
+  }
+}

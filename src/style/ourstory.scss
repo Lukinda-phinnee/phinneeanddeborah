@@ -1,0 +1,154 @@
+@use "variables" as * ;
+@use "sass:color" ;
+
+.story-container {
+  margin-top: 1rem;
+
+  .story-header {
+    h2 {
+      font-family: "geraldine";
+      font-size: 4rem;
+      padding: 0;
+      margin: 0;
+      color: $primary-dark-green;
+      line-height: 1;
+    }
+
+    img {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+
+  .story {
+    // Customize the icon container
+    .vertical-timeline-element-icon {
+      width: 50px; // Adjust the size of the icon container
+      height: 50px;
+      border-radius: 50%; // Make it circular
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%; // Ensure the image fits within the container
+        height: auto;
+      }
+    }
+
+    .vertical-timeline-element {
+      //background: red !important;
+      //height: 200px;
+      //display: flex;
+    }
+
+    // Customize the date section
+    .vertical-timeline-element-date {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    // Replace the date with a custom div (optional)
+    .custom-date-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      //background: red;
+      width: 100%;
+      max-width: 180px;
+      height: 100%;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      margin: auto 0;
+      padding: 0;
+      position: relative;
+
+      
+
+      img {
+        width: 100%; // Adjust image size
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+
+      }
+
+      .flowers-icon1 {
+        position: absolute;
+        top: -10px;
+        right: -20px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .vertical-timeline-element-content {
+      //background: red !important;
+      position: relative !important;
+
+      .bouquet1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -30px;
+        right: 0;
+      }
+
+      .bouquet1-1 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: 0;
+      }
+      .bouquet1-2 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50px;
+        left: -20px;
+      }
+
+      .bouquet1-3 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 100px;
+        left: 0;
+      }
+
+      .bouquet2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -30px;
+        left: 0;
+      }
+
+      .bouquet2-1 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: 0;
+      }
+      .bouquet2-2 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 50px;
+        right: -20px;
+      }
+
+      .bouquet2-3 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 100px;
+        right: 0;
+      }
+    }
+  }
+}
