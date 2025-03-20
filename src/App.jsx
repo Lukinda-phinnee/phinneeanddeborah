@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/home";
+import Navbar from "./components/navbar.jsx";
+import Home from "./components/home.jsx";
 import CountdownTimer from "./components/CountdownTimer.jsx";
 import Couple from "./components/Couple.jsx";
 import OurStory from "./components/OurStory.jsx";
