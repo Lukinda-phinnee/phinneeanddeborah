@@ -8,16 +8,14 @@ const Home = () => {
         <div className="home">
             <div className="section">
                 <div className="inner-section">
-                    <h2>Phinnee<br/> Lukinda</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Uma orci quctor vitae nisi.</p>
-                    <p>fringilla pellesque amet tempus.</p>
-                    <img src={SingleFlower} className="singleflower1" alt=""/>
-                    <img src={SingleFlower} className="singleflower2" alt=""/>
-                    <img src={SingleFlower} className="singleflower3" alt=""/>
-                    <img src={SingleFlower} className="singleflower4" alt=""/>
-                    <img src={SingleFlower} className="singleflower5" alt=""/>
-                    <img src={SingleFlower} className="singleflower6" alt=""/>
+                    <h2>Phinnee<br /> Lukinda</h2>
+                    <p>“This is now bone of my bones And flesh of my flesh; She shall be called Woman, Because she was taken out of Man.”</p>
+                    <img src={SingleFlower} className="singleflower1" alt="" />
+                    <img src={SingleFlower} className="singleflower2" alt="" />
+                    <img src={SingleFlower} className="singleflower3" alt="" />
+                    <img src={SingleFlower} className="singleflower4" alt="" />
+                    <img src={SingleFlower} className="singleflower5" alt="" />
+                    <img src={SingleFlower} className="singleflower6" alt="" />
                 </div>
             </div>
             <div className="main-img">
@@ -30,16 +28,15 @@ const Home = () => {
             </div>
             <div className="section top">
                 <div className="inner-section">
-                    <h2>Deborah<br/> Chungu</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Uma orci quctor vitae nisi.</p>
-                    <p>fringilla pellesque amet tempus.</p>
-                    <img src={SingleFlower} className="singleflower1" alt=""/>
-                    <img src={SingleFlower} className="singleflower2" alt=""/>
-                    <img src={SingleFlower} className="singleflower3" alt=""/>
-                    <img src={SingleFlower} className="singleflower4" alt=""/>
-                    <img src={SingleFlower} className="singleflower5" alt=""/>
-                    <img src={SingleFlower} className="singleflower6" alt=""/>
+                    <h2>Deborah<br /> Chungu</h2>
+                    <p>'Therefore a man shall leave his father and mother and be joined to his wife, and they shall become one flesh.'</p>
+
+                    <img src={SingleFlower} className="singleflower1" alt="" />
+                    <img src={SingleFlower} className="singleflower2" alt="" />
+                    <img src={SingleFlower} className="singleflower3" alt="" />
+                    <img src={SingleFlower} className="singleflower4" alt="" />
+                    <img src={SingleFlower} className="singleflower5" alt="" />
+                    <img src={SingleFlower} className="singleflower6" alt="" />
                 </div>
             </div>
         </div>
